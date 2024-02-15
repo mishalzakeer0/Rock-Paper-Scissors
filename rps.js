@@ -1,4 +1,4 @@
-function getComputerChoice(){
+function getComputerChoice(){                                               // This function gets response from computer by indexing value by random function in math
     let arr = ["Rock", "Paper", "Scissors"];
     let index = Math.floor(Math.random()*3);
     let computerselect = (arr[index]);
@@ -7,7 +7,7 @@ function getComputerChoice(){
 }
 let computerSelection = getComputerChoice();
 
-function getUserChoice(){
+function getUserChoice(){                                                       // This function collects response from user from prompt
     let promptValue = prompt("Enter Your Choice: Rock, Paper, Scissors");
     let lowerCase = promptValue.toLowerCase();
     let userSelection = lowerCase.charAt(0).toUpperCase() + lowerCase.slice(1);
@@ -17,42 +17,43 @@ function getUserChoice(){
 
 let userSelection = getUserChoice();
 
-if (computerSelection === userSelection) {
+if (computerSelection === userSelection) {                                  // IF BOTH USER AND COMPUTER CHOICE ARE SAME CONSOLE PRINTS DRAW
     console.log("Draw");
 } 
 
-else if (userSelection === "Rock") {
-    if (computerSelection === "Paper") {
-        console.log("COMPUTER WIN!!!");
+else if (userSelection === "Rock") {                                        // IF USER SELECTS ROCK
+    if (computerSelection === "Paper") {                                            // AND COMPUTER SELECTS PAPER CONSOLE PRINT COMPUTER WIN
+        console.log("COMPUTER WIN!!!");                                             
         
     }
     else if(computerSelection === "Scissors") {
-        console.log("USER WIN!!!");
+        console.log("USER WIN!!!");                                                 // OR COMPUTER SELECTS SCISSORS CONSOLE PRINT USER WIN
 
     }
 }
 
-else if (userSelection === "Paper") {
-    if (computerSelection === "Rock") {
-        console.log("USER WIN!!!")
+else if (userSelection === "Paper") {                                      // IF USER SELECTS PAPER 
+    if (computerSelection === "Rock") {                                          // AND COMPUTER SELECTS ROCK
+        console.log("USER WIN!!!")                                               // CONSOLE PRINT USER WIN
+                                                     
         
     }
 
-    else if(computerSelection === "Scissors") {
-        console.log("COMPUTER WIN!!!")
+    else if(computerSelection === "Scissors") {                         
+        console.log("COMPUTER WIN!!!")                                          // OR COMPUTER SELECTS SCISSORS CONSOLE PRINT COMPUTER WIN
 
     }
 
 
 }
 
-else if (userSelection === "Scissors") {
-    if (computerSelection === "Rock") {
-        console.log("COMPUTER WIN!!!");
+else if (userSelection === "Scissors") {                                            // IF USER SELECTS SCISSORS
+    if (computerSelection === "Rock") {                                                     // AND COMPUTER SELECT ROCK COMPUTER WIN
+        console.log("COMPUTER WIN!!!");                                                                             
         
     }
 
-    else if (computerSelection === "Paper") {
+    else if (computerSelection === "Paper") {                                               //OR COMPUTER SELECT PAPER USER WIN  
         console.log("USER WIN!!!");
     
     }
