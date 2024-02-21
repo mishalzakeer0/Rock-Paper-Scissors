@@ -17,11 +17,11 @@ function getUserChoice(){                                                       
 
 let userSelection = getUserChoice();
 
-if (computerSelection === userSelection) {                                  // IF BOTH USER AND COMPUTER CHOICE ARE SAME CONSOLE PRINTS DRAW
+if (computerSelection === userSelection) {                                  // THIS CHECK BOTH USER AND COMPUTER CHOICE ARE SAME AND CONSOLE PRINTS DRAW
     console.log("Draw");
 } 
 
-else if (userSelection === "Rock") {                                        // IF USER SELECTS ROCK
+else if (userSelection === "Rock") {                                        // THIS CHECK IF USER SELECTS ROCK
     if (computerSelection === "Paper") {                                            // AND COMPUTER SELECTS PAPER CONSOLE PRINT COMPUTER WIN
         console.log("COMPUTER WIN!!!");                                             
         
@@ -32,7 +32,7 @@ else if (userSelection === "Rock") {                                        // I
     }
 }
 
-else if (userSelection === "Paper") {                                      // IF USER SELECTS PAPER 
+else if (userSelection === "Paper") {                                      // THIS CHECKS IF USER SELECTS PAPER 
     if (computerSelection === "Rock") {                                          // AND COMPUTER SELECTS ROCK
         console.log("USER WIN!!!")                                               // CONSOLE PRINT USER WIN
                                                      
@@ -47,7 +47,7 @@ else if (userSelection === "Paper") {                                      // IF
 
 }
 
-else if (userSelection === "Scissors") {                                            // IF USER SELECTS SCISSORS
+else if (userSelection === "Scissors") {                                            // THIS CHECKS IF USER SELECTS SCISSORS
     if (computerSelection === "Rock") {                                                     // AND COMPUTER SELECT ROCK COMPUTER WIN
         console.log("COMPUTER WIN!!!");                                                                             
         
